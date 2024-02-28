@@ -71,7 +71,36 @@ header .contact a:hover {
 
 /* ------------------------- MAIN ------------------------- */
 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     flex-grow: 1;
+    padding: 20px 10px;
+}
+
+section h2 {
+    font-size: 24px;
+    padding: 30px 0 30px 15px;
+}
+
+section .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* -------------------------------------------------------- */
+#technologies .container span {
+    padding: 5px 15px;
+    margin: 7px;
+    background: var(--accent);
+    border-radius: 20px;
+}
+
+#technologies .container .linebreak {
+    background: var(--bg3);
+    height: 2px;
+    margin: 10px;
+    flex-basis: 100%;
 }
 
 
