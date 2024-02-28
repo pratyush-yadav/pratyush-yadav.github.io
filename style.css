@@ -1,0 +1,103 @@
+:root {
+    --bg1: hsl(250, 100%, 1%);
+    --bg2: hsl(0, 0%, 6%);
+    --bg3: hsl(0, 0%, 12%);
+    --color: hsl(0, 0%, 100%);
+    --accent: hsl(230, 21%, 40%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+body {
+    color: var(--color);
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* ------------------------- HEADER ------------------------- */
+header {
+    background: linear-gradient(var(--bg2), var(--bg3) 75%);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .title {
+    flex-grow: 1;
+}
+
+header .title p{
+    text-align: center;
+}
+
+header .title p:nth-child(1) {
+    font-size: 36px;
+}
+
+header .title p:nth-child(2) {
+    font-size: 20px;
+    line-height: 200%;
+}
+
+header .contact {
+    text-align: right;
+}
+
+header .contact a {
+    color: var(--color);
+    text-decoration: none;
+    display: block;
+    line-height: 180%;
+    cursor: pointer;
+}
+
+header .contact a:hover {
+    color: var(--accent);
+    transition: 0.1s ease-in-out;
+}
+
+
+/* ------------------------- MAIN ------------------------- */
+main{
+    flex-grow: 1;
+}
+
+
+/* ------------------------- FOOTER ------------------------- */
+footer {
+    background: linear-gradient(var(--bg2), var(--bg3) 75%);
+    padding: 20px 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+
+/* ------------------------- RESPONSIVE ------------------------- */
+@media (max-width:520px) {
+    header{
+        flex-direction: column;
+    }
+
+    header .contact{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 60px;
+    }
+    
+    header a span{
+        display: none;
+    }
+}
