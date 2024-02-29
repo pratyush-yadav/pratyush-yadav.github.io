@@ -103,6 +103,42 @@ section .container{
     flex-basis: 100%;
 }
 
+/* -------------------------------------------------------- */
+#projects .container {
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.project-card {
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 2px var(--accent);
+}
+
+.project-card img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 1px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-description {
+    text-align: center;
+    padding: 5px;    
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.technologies-used,
+.short-description {
+    font-size: 16px;
+}
+
 
 /* ------------------------- FOOTER ------------------------- */
 footer {
