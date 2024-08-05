@@ -132,6 +132,9 @@ section .container{
 .project-name {
     font-weight: bold;
     font-size: 20px;
+    display: block;
+    padding-bottom: 5px;
+    color: var(--color);
 }
 
 .technologies-used,
